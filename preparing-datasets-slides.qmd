@@ -122,11 +122,93 @@ R (Tidyverse)
 
 ## Documentation
 
+Documentation is a critical part of research data management
+
+Describing your dataset well and documenting what you've done is not only for your own benefit -- it also benefits anyone else who wants to try and reuse your data in the future
+
+Documentation is about **context**
+
 ## README Files
+
+A common type of documentation included with datasets deposited into repositories is a **README file**
+
+- General information
+- Content overview
+- Methodological information
+- Access and reuse information
+- Other data-specific details
+
+::: {.notes}
+
+    General Information: Dataset title, contact information for principal investigators and other key personnel, time frame and location for data collection, language information, persistent identifier (if available), and identification of funding source
+    
+    Content overview: Explanation of directory structure or file organization, a list of files and short descriptions of each, important relationships between files, other information necessary to understand files
+    
+    Methodological information: Description of method for data collection or generation, documentation of data processing/transforming/cleaning steps, details on software or instrumentation necessary to correctly interpret the data, information on quality assurance procedures (if applicable)
+    
+    Access and reuse information: Licenses or reuse restrictions that apply to the data, links to the associated publication and other related resources or publications (including code repositories), recommended citation for the dataset
+    
+    Other data-specific details: A list of variables with descriptions of each, units of measurement, definitions of codes/abbreviations/symbols used in the dataset, how missing data values have been recorded/denoted
+
+:::
 
 ## Metadata
 
+Sometimes the terms documentation and metadata are used interchangeably
+
+I'll use the term metadata to refer to structured description that makes use of a formally defined standard or schema
+
+Structured metadata fundamentally serves multiple purposes:
+
+1. To act as documentation
+2. To facilitate discovery, and
+3. To allow interoperability
+
+::: {.notes}
+When the term schema is used, this usually means that a standard also has a technical specification for how the metadata should be encoded (and refers to this specification), such as in a markup language like XML.
+
+Metadata is structured and encoded the way it is to allow it to be indexed and used in searches. In other words, it is machine-readable.
+:::
+
 ## Dublin Core Element Set
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Contributor
+- Coverage
+- Creator
+- Date
+- Description
+- Format
+- Identifier
+- Language
+:::
+
+::: {.column width="50%"}
+- Publisher
+- Relation
+- Rights
+- Source
+- Subject
+- Title
+- Type
+:::
+
+::::
+
+## Some metadata fields to fill out
+
+- Dataset Description 	
+- Subject
+- Keyword
+- Related Work/Article 
+- Notes
+- License/Data Use Agreement 
+
+::: {.aside}
+[Example LibraData dataset page](https://dataverse.lib.virginia.edu/dataset.xhtml?persistentId=doi:10.18130/V3/I5UJMM) 
+:::
 
 ## Data Repositories
 

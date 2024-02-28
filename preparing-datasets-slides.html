@@ -466,16 +466,109 @@ Avoid encoding information in the directory structure: You should be able to und
 </section>
 <section id="documentation" class="slide level2">
 <h2>Documentation</h2>
+<p>Documentation is a critical part of research data management</p>
+<p>Describing your dataset well and documenting what you’ve done is not only for your own benefit – it also benefits anyone else who wants to try and reuse your data in the future</p>
+<p>Documentation is about <strong>context</strong></p>
 </section>
 <section id="readme-files" class="slide level2">
 <h2>README Files</h2>
+<p>A common type of documentation included with datasets deposited into repositories is a <strong>README file</strong></p>
+<ul>
+<li>General information</li>
+<li>Content overview</li>
+<li>Methodological information</li>
+<li>Access and reuse information</li>
+<li>Other data-specific details</li>
+</ul>
+<aside class="notes">
+<pre><code>General Information: Dataset title, contact information for principal investigators and other key personnel, time frame and location for data collection, language information, persistent identifier (if available), and identification of funding source
+
+Content overview: Explanation of directory structure or file organization, a list of files and short descriptions of each, important relationships between files, other information necessary to understand files
+
+Methodological information: Description of method for data collection or generation, documentation of data processing/transforming/cleaning steps, details on software or instrumentation necessary to correctly interpret the data, information on quality assurance procedures (if applicable)
+
+Access and reuse information: Licenses or reuse restrictions that apply to the data, links to the associated publication and other related resources or publications (including code repositories), recommended citation for the dataset
+
+Other data-specific details: A list of variables with descriptions of each, units of measurement, definitions of codes/abbreviations/symbols used in the dataset, how missing data values have been recorded/denoted</code></pre>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="metadata" class="slide level2">
 <h2>Metadata</h2>
+<p>Sometimes the terms documentation and metadata are used interchangeably</p>
+<p>I’ll use the term metadata to refer to structured description that makes use of a formally defined standard or schema</p>
+<p>Structured metadata fundamentally serves multiple purposes:</p>
+<ol type="1">
+<li>To act as documentation</li>
+<li>To facilitate discovery, and</li>
+<li>To allow interoperability</li>
+</ol>
+<aside class="notes">
+<p>When the term schema is used, this usually means that a standard also has a technical specification for how the metadata should be encoded (and refers to this specification), such as in a markup language like XML.</p>
+<p>Metadata is structured and encoded the way it is to allow it to be indexed and used in searches. In other words, it is machine-readable.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="dublin-core-element-set" class="slide level2">
 <h2>Dublin Core Element Set</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Contributor</li>
+<li>Coverage</li>
+<li>Creator</li>
+<li>Date</li>
+<li>Description</li>
+<li>Format</li>
+<li>Identifier</li>
+<li>Language</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Publisher</li>
+<li>Relation</li>
+<li>Rights</li>
+<li>Source</li>
+<li>Subject</li>
+<li>Title</li>
+<li>Type</li>
+</ul>
+</div>
+</div>
 </section>
+<section id="some-metadata-fields-to-fill-out" class="slide level2">
+<h2>Some metadata fields to fill out</h2>
+<ul>
+<li>Dataset Description<br>
+</li>
+<li>Subject</li>
+<li>Keyword</li>
+<li>Related Work/Article</li>
+<li>Notes</li>
+<li>License/Data Use Agreement</li>
+</ul>
+
+<aside><div>
+<p><a href="https://dataverse.lib.virginia.edu/dataset.xhtml?persistentId=doi:10.18130/V3/I5UJMM">Example LibraData dataset page</a></p>
+</div></aside></section>
 <section id="data-repositories" class="slide level2">
 <h2>Data Repositories</h2>
 <p><strong>Research data repositories</strong> are storage locations and services designed and intended for dataset hosting and preservation. Data repositories generally:</p>

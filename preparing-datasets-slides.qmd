@@ -1,0 +1,181 @@
+---
+title: "Preparing Datasets for Deposit"
+author: "Michael Lenard, Research Data Management Librarian"
+date: "February 28, 2024"
+format: 
+  revealjs:
+    theme: default
+editor: visual
+---
+
+## Before we begin
+
+-   download the .zip file from the GitHub repository
+-   put it somewhere easy to find
+-   unzip it
+
+::: {.aside}
+**Disclaimer**: Sharing human subjects research data involves ethical and procedural complications we won't have time to get into today
+:::
+
+## Motivation
+
+Why should we take care to prepare our datasets before deposit?
+
+-   Saves time and effort later
+-   Well cared for datasets reflect well conducted studies
+-   Facilitates reuse of your dataset (can't be reused if no one can find it or make sense of it)
+-   Some repositories expect some level of curation has been done by you
+
+## Research Data Lifecycle
+
+One example from UVA Library:
+
+![](images/data-lifecycle.png)
+
+::: {.aside}
+There are many other examples, you may find them more or less useful
+:::
+
+## Topic Overview
+
+1.  File organization/directory structure
+2.  Data cleaning
+3.  Documentation and metadata
+4.  Selecting a repository
+
+## File Organization
+
+Some general principles for file organization:
+
+1. Plan it early
+2. Write it down
+3. Make it logical
+4. Follow it consistently
+5. Avoid encoding information in the directory structure
+
+::: {.notes}
+    Plan it early: Don't wait until partway through a project to devise an organization plan. It will be easier to follow a plan if you do it from the beginning, before it involves moving or renaming anything.
+    
+    Write it down: You will want to document your file organization scheme for several reasons, including making it easier for students or collaborators to follow, ensuring you understand the organization if you come back to a project after a long pause, and for use in your final documentation that you submit to a repository at the end of the project.
+    
+    Make it logical: There won't ever be only one logical organization for any project, but some choices are better than others. Beyond organizing your files and folders by project, you might choose to organize projects by
+        Time period
+        Researcher/project staff
+        File type or function
+        Location
+        Research activity or experiment
+        Specimen
+        Or some other way your data and files naturally group together.
+        
+    Follow it consistently: However you choose to organize your project folders and files, it is crucial to follow your scheme consistently. It is too easy to forget to go back and fix instances where the scheme wasn't followed, likely leading to confusion. If the plan needs to be changed, change the written plan and reorganize the project files systematically.
+    
+    Avoid encoding information in the directory structure: You should be able to understand the contents of a file independently of the directory structure. In other words, they should be described sufficiently by their file name alone. See the next section on file naming conventions.
+:::
+
+## Example File Structure
+
+![](images/example-file-org.png)
+
+## Data Cleaning
+
+Messy or poorly formatted data reflects negatively on your research and causes friction for reuse
+
+Well-planned data collection, data entry, and data processing steps can reduce the need for cleaning later, but some cleaning will frequently be needed
+
+Thankfully, there are strategies
+
+## Spreadsheet Best Practices
+
+- Only one value per cell
+- Only one table per sheet
+- One variable to a column, one observation to a row
+- Don't encode data in the formatting or spatial layout
+- Descriptive column names, with units
+- Be consistent with how you handle missing data (empty? NULL? NA? 0?)
+
+Spreadsheets aren't a lab notebook
+
+## What Excel Can Do
+
+- Remove duplicate rows
+- Find and replace text
+- Change text case
+- Removing extraneous whitespace
+- Adjusting numbers and dates
+- Merge and split columns
+- Transpose rows/columns
+
+## More Powerful Tools
+
+OpenRefine
+
+-   Faceting allows for manipulation of subsets of data
+-   Built-in data cleaning functions & options
+-   Supports regular expressions via GREL
+
+R (Tidyverse)
+
+-   Powerful tabular data manipulation via `dplyr` package
+-   Database joins
+-   Also supports regular expressions
+
+## Documentation
+
+## README Files
+
+## Metadata
+
+## Dublin Core Element Set
+
+## Data Repositories
+
+**Research data repositories** are storage locations and services designed and intended for dataset hosting and preservation. Data repositories generally:
+
+-   offer support for data sharing and long-term preservation
+-   enable access controls for datasets
+-   attach terms of use/licenses
+-   provide persistent and citable identifiers
+-   create landing pages for deposited datasets that display descriptive metadata
+
+## 
+
+![](images/datarepocrop.png)
+
+## FAIR Data {.smaller}
+
+-   **Findable**: A dataset is described with rich metadata, is assigned a unique and persistent identifier, and is indexed and searchable online. The metadata should include the identifier of the dataset it describes.
+-   **Accessible**: The dataset and associated metadata are retrievable via their identifier using a standardized, open communications protocol that allows for authentication/authorization. Metadata should be accessible even if the data itself is no longer available.
+-   **Interoperable**: Data and metadata use formally specified, standardized, and broadly applicable data/metadata schemas and vocabularies.
+-   **Reusable**: Data and metadata are sufficiently described with fitting and accurate attributes, have a clear associated license covering reuse permissions, and meet the standards of the relevant domain or community.
+
+## "Desireable Characteristics" {.smaller}
+
+-   Free and open access
+-   Clear (re)use guidance
+-   Stated retention policies
+-   Demonstrated capabilities for long-term planning and risk management
+-   Provides curation and quality assurance
+-   Ensures that every dataset has a persistent identifier and metadata
+-   Data provenance tracking
+-   Established data security and authentication practices
+
+## Using Re3data
+
+Three main approaches:
+
+1.  Search
+2.  Browse by subject
+3.  Browse by content type
+
+## Thanks!
+
+There is a new research data management LibGuide coming soon that covers these topics
+
+Check out the RDS newsletter and sign up for it here:
+
+<https://library.virginia.edu/data/newsletters>
+
+Request a consult with me at [lenard\@virginia.edu](mailto:lenard@virginia.edu)
+
+or with the RDM team at [dmconsult\@virginia.edu](mailto:dmconsult@virginia.edu)!
